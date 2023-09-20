@@ -30,6 +30,9 @@
 		C0B6F8582AB9CA7A00220EED /* CopyStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B6F8572AB9CA7A00220EED /* CopyStruct.swift */; };
 		C0BC4C302ABA76370074F454 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BC4C2F2ABA76370074F454 /* Router.swift */; };
 		C0BC4C322ABA9A930074F454 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BC4C312ABA9A930074F454 /* ViewModel.swift */; };
+		C0BC4C3B2ABAE8C40074F454 /* BearRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BC4C3A2ABAE8C40074F454 /* BearRouter.swift */; };
+		C0BC4C3D2ABAEBEB0074F454 /* BearViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BC4C3C2ABAEBEB0074F454 /* BearViewModel.swift */; };
+		C0BC4C3F2ABAEC470074F454 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BC4C3E2ABAEC470074F454 /* Observable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +58,9 @@
 		C0B6F8572AB9CA7A00220EED /* CopyStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyStruct.swift; sourceTree = "<group>"; };
 		C0BC4C2F2ABA76370074F454 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		C0BC4C312ABA9A930074F454 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		C0BC4C3A2ABAE8C40074F454 /* BearRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BearRouter.swift; sourceTree = "<group>"; };
+		C0BC4C3C2ABAEBEB0074F454 /* BearViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BearViewModel.swift; sourceTree = "<group>"; };
+		C0BC4C3E2ABAEC470074F454 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +131,7 @@
 				C07735E52AB97A9B00770EA0 /* BearViewController.swift */,
 				C0B6F83E2AB9A78900220EED /* BearAPI.swift */,
 				C0B6F8432AB9ABAF00220EED /* NetworkBear.swift */,
+				C0BC4C3C2ABAEBEB0074F454 /* BearViewModel.swift */,
 			);
 			path = Beer;
 			sourceTree = "<group>";
@@ -134,6 +141,7 @@
 			children = (
 				C0B6F84B2AB9B26500220EED /* Response */,
 				C0B6F8482AB9B22900220EED /* Request */,
+				C0BC4C3A2ABAE8C40074F454 /* BearRouter.swift */,
 			);
 			path = BearModel;
 			sourceTree = "<group>";
@@ -175,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				C0B6F8572AB9CA7A00220EED /* CopyStruct.swift */,
+				C0BC4C3E2ABAEC470074F454 /* Observable.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -260,10 +269,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0BC4C3B2ABAE8C40074F454 /* BearRouter.swift in Sources */,
 				C0B6F8442AB9ABAF00220EED /* NetworkBear.swift in Sources */,
 				C0B6F8412AB9AAC900220EED /* BearInfo.swift in Sources */,
 				C0B6F8522AB9B6BB00220EED /* Decodable+Extension.swift in Sources */,
 				C07735E62AB97A9B00770EA0 /* BearViewController.swift in Sources */,
+				C0BC4C3D2ABAEBEB0074F454 /* BearViewModel.swift in Sources */,
 				C07735C22AB9292E00770EA0 /* ViewController.swift in Sources */,
 				C07735DE2AB9649D00770EA0 /* UnsplashAPI.swift in Sources */,
 				C0BC4C322ABA9A930074F454 /* ViewModel.swift in Sources */,
@@ -274,6 +285,7 @@
 				C0B6F8582AB9CA7A00220EED /* CopyStruct.swift in Sources */,
 				C0B6F83F2AB9A78900220EED /* BearAPI.swift in Sources */,
 				C0B6F84D2AB9B2DF00220EED /* RequestBears.swift in Sources */,
+				C0BC4C3F2ABAEC470074F454 /* Observable.swift in Sources */,
 				C07735DC2AB93CDA00770EA0 /* NetworkBasic.swift in Sources */,
 				C07735BE2AB9292E00770EA0 /* AppDelegate.swift in Sources */,
 				C07735C02AB9292E00770EA0 /* SceneDelegate.swift in Sources */,

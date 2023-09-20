@@ -9,9 +9,9 @@ import Foundation
 
 extension Encodable {
     
-    var parameters : [String: Any] {
+    var parameters : [String: String] {
         guard let object = try? JSONEncoder().encode(self) else { return ["": ""] }
-        guard let parameters = try? JSONSerialization.jsonObject(with: object, options: []) as? [String:Any] else { return ["": ""] }
+        guard let parameters = try? JSONSerialization.jsonObject(with: object, options: []) as? [String : String] else { return ["": ""] }
         return parameters
     }
 }
