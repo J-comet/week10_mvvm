@@ -34,12 +34,43 @@ final class SearchViewController: UIViewController {
         }
     }
     
-    func collectionFlowLayout() -> UICollectionViewFlowLayout {
-        let layout = UICollectionViewFlowLayout()
-        layout.itemSize = CGSize(width: 50, height: 50)
-        layout.scrollDirection = .vertical
+    // cell 사이즈가 자유로울 떄 (언스플래시 앱, 모아앱)
+    // 섹션마다 다르게
+    func collectionFlowLayout() -> UICollectionViewLayout {
+        
+        // 아이템 몇개씩 나타낼지
+        let count = 3
+        
+        // 현재 itemSize
+        // widthDimension = group width 의 1/3
+        // heightDimension = group 의 높이로 설정 = (80)
+        let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1/CGFloat(count)), heightDimension: .fractionalHeight(1.0))
+        let item = NSCollectionLayoutItem(layoutSize: itemSize)
+        
+        // group item 바구니
+        // 현재 gropSize
+        // widthDimension = 컬렉션뷰 width 꽉 채우도록
+        // heightDimension = 80
+        let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .absolute(80))
+        let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, repeatingSubitem: item, count: count)
+        group.interItemSpacing = .fixed(10) // 아이템간의 간격
+                
+        // 컬렉션뷰 contentInsets - Margin 설정
+        let section = NSCollectionLayoutSection(group: group)
+        // layout.sectionInset == 기존의 UICollectionViewFlowLayout 과 동일
+        section.contentInsets = NSDirectionalEdgeInsets(top: 10, leading: 10, bottom: 10, trailing: 10)
+        section.interGroupSpacing = 20  // 그룹간의 간격 (현재 가로기준으로 그룹이 묶여있음 NSCollectionLayoutGroup.horizotal)
+        
+        let layout = UICollectionViewCompositionalLayout(section: section)
         return layout
     }
+    
+//    func collectionFlowLayout() -> UICollectionViewFlowLayout {
+//        let layout = UICollectionViewFlowLayout()
+//        layout.itemSize = CGSize(width: 50, height: 50)
+//        layout.scrollDirection = .vertical
+//        return layout
+//    }
     
     // UICollectionViewDiffableDataSource 상속받은 SubClass 에서 모두 처리하도록?
     func configureDataSource() {
