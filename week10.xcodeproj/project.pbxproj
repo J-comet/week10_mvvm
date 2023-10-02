@@ -22,6 +22,7 @@
 		C07735DE2AB9649D00770EA0 /* UnsplashAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07735DD2AB9649D00770EA0 /* UnsplashAPI.swift */; };
 		C07735E32AB9743C00770EA0 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07735E22AB9743C00770EA0 /* Network.swift */; };
 		C07735E62AB97A9B00770EA0 /* BearViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07735E52AB97A9B00770EA0 /* BearViewController.swift */; };
+		C08B37A02AC27071007FF39F /* PinterestSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08B379F2AC27071007FF39F /* PinterestSample.swift */; };
 		C0B6F83F2AB9A78900220EED /* BearAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B6F83E2AB9A78900220EED /* BearAPI.swift */; };
 		C0B6F8412AB9AAC900220EED /* BearInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B6F8402AB9AAC900220EED /* BearInfo.swift */; };
 		C0B6F8442AB9ABAF00220EED /* NetworkBear.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B6F8432AB9ABAF00220EED /* NetworkBear.swift */; };
@@ -52,6 +53,7 @@
 		C07735DD2AB9649D00770EA0 /* UnsplashAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsplashAPI.swift; sourceTree = "<group>"; };
 		C07735E22AB9743C00770EA0 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		C07735E52AB97A9B00770EA0 /* BearViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BearViewController.swift; sourceTree = "<group>"; };
+		C08B379F2AC27071007FF39F /* PinterestSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinterestSample.swift; sourceTree = "<group>"; };
 		C0B6F83E2AB9A78900220EED /* BearAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BearAPI.swift; sourceTree = "<group>"; };
 		C0B6F8402AB9AAC900220EED /* BearInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BearInfo.swift; sourceTree = "<group>"; };
 		C0B6F8432AB9ABAF00220EED /* NetworkBear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkBear.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				C07735CB2AB9292F00770EA0 /* Info.plist */,
 				C04FF4D72ABBCB4000D5C5E1 /* SearchViewController.swift */,
 				C04FF4D92ABBE10500D5C5E1 /* SearchCollectionViewCell.swift */,
+				C08B379F2AC27071007FF39F /* PinterestSample.swift */,
 			);
 			path = week10;
 			sourceTree = "<group>";
@@ -280,6 +283,7 @@
 				C04FF4DA2ABBE10500D5C5E1 /* SearchCollectionViewCell.swift in Sources */,
 				C0B6F8412AB9AAC900220EED /* BearInfo.swift in Sources */,
 				C0B6F8522AB9B6BB00220EED /* Decodable+Extension.swift in Sources */,
+				C08B37A02AC27071007FF39F /* PinterestSample.swift in Sources */,
 				C07735E62AB97A9B00770EA0 /* BearViewController.swift in Sources */,
 				C0BC4C3D2ABAEBEB0074F454 /* BearViewModel.swift in Sources */,
 				C07735C22AB9292E00770EA0 /* ViewController.swift in Sources */,

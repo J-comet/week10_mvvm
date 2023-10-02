@@ -151,13 +151,15 @@ struct Photo: Decodable {
     let results: [PhotoResult]
 }
 
-struct PhotoResult: Decodable {
+struct PhotoResult: Decodable, Hashable {
     let id: String
     let created_at: String
     let urls: PhotoURL
+    let width: CGFloat
+    let height: CGFloat
 }
 
-struct PhotoURL: Decodable {
+struct PhotoURL: Decodable, Hashable {
     let full: String
     let thumb: String
 }
